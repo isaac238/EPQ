@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+@keyframes slideIn {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+html {
+    margin: 0 auto;
+}
+body {
+    background: url("../bghtml.PNG");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.title {
+    font-family: 'Josefin Sans';
+    opacity: 100;
+    animation: fadeIn 1s ease-in 0s forwards;
+}
+
+.text {
+    font-family: 'Josefin Sans';
+}
+
+.button {
+    display: block;
+    margin-bottom: 1rem;
+    border: .001rem solid #ffffff;
+    border-radius: .5rem;
+    padding: .25rem .125rem .25rem .125rem;
+}
+
+.inp {
+	background: transparent;
+	border: .001rem solid #ffffff;
+    border-radius: .5rem;
+    padding: .25rem .125rem .25rem .125rem;
+	color: #fff;
+}	
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+hr {
+    transform: scaleX(0);
+    animation: slideIn 250ms ease-in 1s forwards;
+}
+
+#bottomContent {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in 1.25s forwards;
+}

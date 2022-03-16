@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Isaac > Home</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+</head>
+<body class="d-flex h-100 text-white bg-dark">
+<div class="container d-flex min-vw-10000 min-vh-100 justify-content-center align-items-center p-3 mx-auto flex-column text-center">
+    <main class="px-3">
+        <h1 class="display-1 title">EPQ</h1>
+        <hr class="mt-2 mb-3">
+        <div id="bottomContent">
+			<form id="neuralInput" action="/submit" method="GET">
+				<label class="text" for="hr">HR Input</label><br/>
+				<input name='hr' id="hr" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="avnn">AVNN Input</label><br/>
+				<input name='avnn' id="avnn" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="iis">RRInterval Input</label><br/>
+				<input name='iis' id="iis" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="sdnn">SDNN Input</label><br/>
+				<input name='sdnn' id="sdnn" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="rmssd">RMSSD Input</label><br/>
+				<input name='rmssd' id="rmssd" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="pnn50">PNN50 Input</label><br/>
+				<input name='pnn50' id="pnn50" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="tp">TP Input</label><br/>
+				<input name='tp' id="tp" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="lf">LF Input</label><br/>
+				<input name='lf' id="lf" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="hf">HF Input</label><br/>
+				<input name='hf' id="hf" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="lf_hf">LF_HF Input</label><br/>
+				<input name='lf_hf' id="lf_hf" class="inp" type="number" step="0.000001" min=0><br/>
+				<label class="text" for="eda">EDA Input</label><br/>
+				<input name='eda' id="eda" class="inp" type="number" step="0.000001" min=0><br/>
+				<input id="submit" class="inp text" type="submit"><br/><br/>
+			</form>
+            <a href="getHelp.html" class="button" style="text-decoration: none;"><small class="text-white h4 text">Stress Reduction Techniques</small></a>
+        </div>
+    </main>
+</div>
+</body>
+</html>
